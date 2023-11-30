@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerse Website with Payment Gateway</title>
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Box Icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <!-- Nav -->
+        <div class="nav container">
+            <!-- Logo -->
+            <a href="#" class="logo"> E-Commerse </a>
+            <!-- Cart Icon -->
+            <i class='bx bxs-shopping-bag' id="cart-icon"  data-quantity="0"></i>
+            <!-- Cart -->
+            <div class="cart">
+                <h2 class="cart-title"> Your Cart </h2>
+                <!-- Content -->
+                <div class="cart-content"></div>
+                <!-- Total  -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">₱0</div>
+                </div>
+                <!-- Buy Button  -->
+                <button type="button" class="btn-buy">Pay Now</button>
+                <!-- Close Cart -->
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+        </div>
+    </header>
+    <section class="shop container">
+        <h2 class="section-title">Shop Product</h2>
+        <!-- Shop Content -->
+        <div class="shop-content">
+            <!-- Box 1 -->
+            <div class="product-box">
+                <!-- Stripe need image that are online on local server it will not show in stripe checkout page we have to upload online -->
+                <img 
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRw0zVCdq6m6BXF0L6_aX9aRzfEYHxJIuPVag0gsx9yl74Fzx3vmjYkUnx4_T9uW69qkeDtVu0QsFm2j9yO-Ei80Heag8YXwTHh6Xc2KUBhCz92HdxrstM2tPFJjzfepHxtyEutlfROQgOYMpnTGH9Qu_H8p4SlZ9Qmr3RGPx_TcSAqdoLHMsfU2io90o/s320/1.webp" 
+                alt="" 
+                class="product-img"
+                />
+                <h2 class="product-title"> Teddy Bear </h2>
+                <span class="price">₱ 200 </span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box 2 -->
+            <div class="product-box">
+                <img 
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXwzzLDHt55pT2h8xo9SvPeUPSih5idw2lOyzle9XENX6d5rDjHfsC4Kr7iXYph9cwRyxTM3Bs_jbqtnBrjMO7KjqyrcJa_jDQ4gBvHBFygLAcRxpLTe7T-ogfEyMe9qL892M7ask9XPrqCKEjliSbXXrstKwEKcvLxgegy6A3doWRADmJR1NGkgis2jU/s320/bear1.jpg" 
+                alt="" 
+                class="product-img"
+                />
+                <h2 class="product-title"> Teddy Bear </h2>
+                <span class="price">₱ 200 </span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box 3 -->
+            <div class="product-box">
+                <img 
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqM_YRqbMiFyzJ00gL341uk38u6I5xnS0r-SG-VXS3I533jW9B79xGgJPP4g9msF09Tz6tP9wmurUS6TJfy2oLaC67pSzSeT4jov3zKjEP47yM1PRwE0MfaYlsITssaSNG-L5_KbZDlqSs47UzaHzLUgs3cIwKPepRuNLws-u3_WHE3rHQHYpcBINzu5g/s320/bear2.jpg" 
+                alt="" 
+                class="product-img"
+                />
+                <h2 class="product-title"> Teddy Bear </h2>
+                <span class="price">₱ 200 </span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box 4 -->
+            <div class="product-box">
+                <img 
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFbvaGAP8He90tZ1eA1rZBlan5KFRDdmSscul2yKNc5VaqLE-ekdOxMeCNo5WHevMgOH9HcGtCemjiiDjsVDYro1452_8KAYYaFLmgoX12amQGYK_UStbJEkScBJk1twKu8M-PJ3z5N6YFYbjEL727BsZXz6d7RY4_759fj5aRi_l16qxrErVgBj6m1VQ/s320/bear3.jpg" 
+                alt="" 
+                class="product-img"
+                />
+                <h2 class="product-title"> Teddy Bear </h2>
+                <span class="price">₱ 200 </span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box 5 -->
+            <div class="product-box">
+                <img 
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3V55JGi6lEqplojrl8tV4T6E1_xy7b7AQqgnUEQRrhd0GSzfdv542ZG3zfHcR5yUOSejfKpB1LvJUUFd1YuyRqPFxUYfAVyGKhw-7JL9dQMmeNI9Y8FN6zdSqoNougyNqJ3VL6ObVSzB7JkR1o6i1C_zZpkmW6SlelPAXv0NPOlVSs_bV0wR-Ms62u3E/s320/bear.jpg" 
+                alt="" 
+                class="product-img"
+                />
+                <h2 class="product-title"> Teddy Bear </h2>
+                <span class="price">₱ 200 </span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box 6 -->
+            <div class="product-box">
+                <img 
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFrJt_6JC5HfFXrBs26aJEB7Jhpb6uTEbMS342ntxfQtuphO4WgzGzniHAHeXvJkwfsjPTW2GrbKmCYFjomU1FNN6tanj-d_c08a3sAEyOUR0pE87EbBTMbQisTHh38z3nGtwwfRAR3TvYYBa06gbG72SfVYB0CF-rRDr8ye-tROYrBlJBtC8Blhfmx6k/s320/brown.webp" 
+                alt="" 
+                class="product-img"
+                />
+                <h2 class="product-title"> Teddy Bear </h2>
+                <span class="price">₱ 200 </span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box 7 -->
+            <div class="product-box">
+                <img 
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjz_IdB-4f-Po-vJx1dqMivD831pA9JC5Q4QFj54j4eY__KOFQlMmMSZeJTTDDzBQvLPGNT1Z7SPHjPM7X1Ej4A3W8bAET4lwVrcUL_d29Iqss69qnve6dXyPwnSV9sYCwVIAdEqrhOnoGZ2vGEbS8RPxoqxx5sLuWJoKVl2CALA4Cs7SPr5ZJgZQfqH9g/s320/crochet4.jpg" 
+                alt="" 
+                class="product-img"
+                />
+                <h2 class="product-title"> Teddy Bear </h2>
+                <span class="price">₱ 200 </span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- Box 8 -->
+            <div class="product-box">
+                <img 
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCdPI42sVeB-7RdX0izAshl2NoqHk-sDhsKY1H_QOGBceU93owjqMVHUmGSzI-iC5ycDFfslY4qrEEoI3e20zhYESwINfzqCnNXvLTDTa1VFSqW5KRjkUuUI5zv6KG6lhILvSydYU2uMMSDZbDd_PxMAqoM9haBy_PAgE_i2TjpljuV2w-UMcEu93qkcY/s320/swiper3.jpg" 
+                alt="" 
+                class="product-img"
+                />
+                <h2 class="product-title"> Teddy Bear </h2>
+                <span class="price">₱ 200 </span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+        </div>
+    </section>
+    <!-- Link To JS -->
+    <script src="main.js"></script>
+</body>
+</html>
